@@ -6,6 +6,7 @@
 package Main;
 
 import java.awt.Color;
+import java.awt.Point;
 
 /**
  *
@@ -18,9 +19,11 @@ public class Methods {
         return (rnd);
     }
 
-    public int gridPos(int i) {
-        int pos = (int) Math.floor(i / 30);
-        return (pos);
+    public Point gridPos(Point i) {
+        int posX = (int) Math.floor(i.x / 30);
+        int posY = (int) Math.floor(i.y / 30);
+        i.setLocation(posX,posY);  
+        return (i);
     }
 
     public int wait(int t) {
