@@ -53,8 +53,9 @@ public class Main extends JApplet{
     }
 
     public void paintComponent(Graphics g) {
+        Methods m = new Methods();
         myPic = (Graphics2D) g;
-        myPic.setColor();
+        myPic.setColor(m.color(0));
         myPic.fillRect(12, 12, 12,12);
     }
 }
